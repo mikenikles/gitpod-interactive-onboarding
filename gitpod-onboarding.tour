@@ -14,13 +14,13 @@
       "file": ".gitpod.yml",
       "description": "## Define an `init` task\n\nWith the `.gitpod.yml` config file created, let's define an `init` task. This task instructs Gitpod how to initialize your project, such as downloading & installing dependencies, running a build script, etc.\n\nOpen the `.gitpod.yml` file and add the following content:\n\n```yaml\ntasks:\n  - init: npm install\n```\n\nReplace `npm install` according to what your project requires.",
       "line": 2,
-      "contents": "tasks:\n  - init: npm install\n    command: npm run dev\n"
+      "contents": ""
     },
     {
       "file": ".gitpod.yml",
       "description": "## Define a `command` task\n\nWith the `command` task, we define what Gitpod should do in order to start our app dev server. In a Node.js project, that's often `npm run dev`. Please adjust that accordingly in your project.\n\n```yaml\n    command: npm run dev\n```\n\nCongratulations, you have configured your first project to take advantage of Gitpod!\n\nOnce you commit & push the `.gitpod.yml` file, anyone can start a new ephemeral Gitpod development environment for your project and will have all dependencies automatically installed as well as the dev server started.",
       "line": 3,
-      "contents": "tasks:\n  - init: npm install\n    command: npm run dev\n"
+      "contents": "tasks:\n  - init: npm install\n"
     }
   ]
 }
