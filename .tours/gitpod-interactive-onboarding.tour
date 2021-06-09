@@ -1,0 +1,25 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Gitpod Interactive Onboarding",
+  "steps": [
+    {
+      "title": "Welcome to Gitpod",
+      "description": "# Welcome to Gitpod\n\nThis interactive tutorial guides you through the necessary steps to configure Gitpod for your project.\n\nHere are some benefits you will get from that:\n* Anyone can contribute to your project with a single click.\n* Gitpod will automatically install dependencies and run build scripts.\n* Your app development server will start, ready for you to develop with.\n\nLet's get started."
+    },
+    {
+      "title": "Create a .gitpod.yml config file",
+      "description": "## Create a `.gitpod.yml` configuration file\n\nThe `.gitpod.yml` configuration file is where you tell Gitpod what to do in order to install dependencies, build your project and start the development server.\n\nFirst, let's create the file:\n\n>> touch .gitpod.yml\n\nFantastic! Next, let's define a few tasks.\n"
+    },
+    {
+      "file": ".gitpod.yml",
+      "description": "## Define an `init` task\n\nWith the `.gitpod.yml` config file created, let's define an `init` task. This task instructs Gitpod how to initialize your project, such as downloading & installing dependencies, running a build script, etc.\n\nOpen the `.gitpod.yml` file and add the following content:\n\n```yaml\ntasks:\n  - init: npm install\n```\n\nReplace `npm install` according to what your project requires.",
+      "line": 2
+    },
+    {
+      "file": ".gitpod.yml",
+      "description": "## Define a `command` task\n\nWith the `command` task, we define what Gitpod should do in order to start our app dev server. In a Node.js project, that's often `npm run dev`. Please adjust that accordingly in your project.\n\n```yaml\n    command: npm run dev\n```\n\nCongratulations, you have configured your first project to take advantage of Gitpod!\n\nOnce you commit & push the `.gitpod.yml` file, anyone can start a new ephemeral Gitpod development environment for your project and will have all dependencies automatically installed as well as the dev server started.",
+      "line": 3
+    }
+  ],
+  "ref": "main"
+}
